@@ -18,7 +18,7 @@ export function Navigation() {
       <div className="max-w-6xl mx-auto px-6 lg:px-16">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="font-mono text-primary font-semibold tracking-wider">
-            {"<AC />"}
+            {"<DW />"}
           </a>
 
           {/* Desktop Nav */}

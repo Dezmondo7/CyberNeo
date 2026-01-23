@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
 @import 'tailwindcss';
 /*@import 'tw-animate-css';*/
 
@@ -75,6 +76,9 @@
 }
 
 @theme inline {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Fira Code', ui-monospace, monospace;
+  
   --color-background: oklch(0.13 0.02 240);
   --color-foreground: oklch(0.95 0.01 200);
   --color-card: oklch(0.16 0.02 240);
@@ -137,5 +141,6 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
   }
 }
