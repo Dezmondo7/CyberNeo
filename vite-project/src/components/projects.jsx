@@ -18,8 +18,9 @@ const projects = [
     icon: Shield,
   },
   {
-    title: "CryptoVault",
-    description: "End-to-end encrypted password manager with zero-knowledge architecture. Features secure sharing and breach monitoring.",
+    title: "Active Directory Attack & Defence lab",
+    description: "DAY 1 Creating the environment. I set up three machines within the VMWare workstation environment, I already have a Windows 10 machine installed from a previous project. That left me with installing SQL Server 2022 as the base for Active Directory and Kali Linux as the attack machine. Both ISO's were installed without too much trouble. For both I had to do a custom installation and chose the option to install the operating system later to avoid licensing issues, specifically for the Windoews Server ISO. The next step is to make sure that each machine is able to communicate with each. This was done by making sure that three machines are on the same network type. ONce on the windows 10 machine I used 'ipconfig' to check the IP adress. On Klai I issued the command 'ip a' to gather the IP and then test the connection between the two maciines. I ran 'ping [KALI IP]' to test the connection and the request timed out. This meant that somewhere along the lines the ping was sending requests but they were not being recieved. To fix this I opened Windows Defender Firewall and Enabled Rule the File and Printer Sharing (Echo Request -ICMPv4-In). 
+                   ",
     tech: ["Rust", "AES-256", "SQLite", "WebAssembly"],
     github: "#",
     live: "#",
