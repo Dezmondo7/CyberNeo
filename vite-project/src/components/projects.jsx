@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Github, ExternalLink, Shield, Terminal, Lock, Bug } from "lucide-react"
 import { ProjectModal } from "../components/project-modal"
+import enableRule from "../assets/enable.png"
 
 const projects = [
   {
@@ -68,10 +69,10 @@ const projects = [
     icon: Lock,
     sections: [
       {
-        heading: "Overview",
-        text: "CryptoVault is a zero-knowledge password manager where encryption and decryption happen entirely on the client side. The server never has access to plaintext credentials, ensuring maximum security even in the event of a server breach.",
-        screenshot: null,
-        screenshotLabel: "CryptoVault - Vault View",
+        heading: "Setting up the Environment",
+        text: "I set up three machines within the VMWare workstation using ISO's including a Windows 10 machine installed from a previous project. That left installing Windows Server 2022 as the base for Active Directory and Kali Linux as the attack machine. They required custom installations and I chose the option to install the operating system later to avoid licensing issues, specifically for the Windoews Server ISO. The next step is to make sure that each machine is able to communicate with each. This was done by making sure that three machines are on the same network type. Using Windows 10 machine I used 'ipconfig' to check the IP adress. On Kali I issued the command 'ip a' to gather the IP and then test the connection between the two machines. I ran 'ping [KALI IP]' to test the connection and the request timed out. This meant that somewhere within the connection the ping was sending requests but they were not being recieved. To fix this I opened Windows Defender Firewall and Enabled Rule - File and Printer Sharing (Echo Request -ICMPv4-In). I did the same for the Windows Server. Then I moved on to Active Directory, the fist step is to open Server Manager and chage the name of the computer which I did to DC01 and then followed the instrcutions to reboot. The next step is to set a static IP via the Control Panel. Network and Internet -> Network and Sharing Center -> Chnage adapter settings, Ethernet -> Properties -> Internet Protocol Version 4 (IPv4) -> Properties and set the adresses to the following: IP address: [] Subnet mask: [] Default gateway: [] Preferred DNS:[] The IP Adress must be a static adress so that it is the fixed identity of the Domain Controller and is the authentication authoritory for the domain. It is predicatble self reliant and can be discoered by other machines and you must ensure that it is a private internal network. This IP ensures that other domains can join, kerberous, LDAP will not break and attack and detections will not fail. If a server provides a service then it must have a static IP. The Subnet Mask defines who is considerred 'local' on the network meanding no routing between two lab machines. Default Gateway and is for traffic that is not on the local network. Preferred DNS 127.0.0.1. creates a loopback adress so the computer can talk to itself, this is useful as the DC uses the itself for the DNS. Active Directory heavily relies on DNS records _ldap.tcp _kerberos._tcp & Domain SRV records. By pointing DNS to itself AD Services register correctly, DC can resolve its own domain and authentication does not break. IP = who am I. Subnet = who is local. Default Gateway = how do I leave. DNS = how I find names. Active Directory is DNS + authentication. After confirming that the network is working and packets are delivered I started setting up Active Directory within Server Manager. I clicked Add Roles and Features, chose DC01 and then selected Active Directory Domain Services and installed. Before joining the domain, I validated Layer 3 connectivity and DNS resolution between the client and the Domain Controller, ensuring the client could resolve domain services correctly. Verified successful domain join via System Properties and command‑line validation.",
+        screenshot: enableRule,
+        screenshotLabel: "enable rule within Windows Firewall",
       },
       {
         heading: "Encryption Architecture",
