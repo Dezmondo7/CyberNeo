@@ -73,7 +73,7 @@ const projects = [
         heading: "Setting up the OS Environment",
         text: "I set up three machines within the VMWare workstation using ISO's including a Windows 10 machine installed from a previous project. That left installing Windows Server 2022 as the base for Active Directory and Kali Linux as the attack machine. They required custom installations and I chose the option to install the operating system later to avoid licensing issues, specifically for the Windows Server ISO. The next step is to make sure that each machine is able to communicate with each. This was done by making sure that three machines are on the same network type. Using Windows 10 machine I used 'ipconfig' to check the IP address. On Kali I issued the command 'ip a' to gather the IP and then test the connection between the two machines. I ran 'ping [KALI IP]' to test the connection and the request timed out. This meant that somewhere within the connection the ping was sending requests but they were not being received. To fix this I opened Windows Defender Firewall and Enabled Rule - File and Printer Sharing (Echo Request -ICMPv4-In). I did the same for the Windows Server. Ping requests from each machine both returned successful replies.",
         screenshot: enableRule,
-        screenshotLabel: "enable rule within Windows Firewall",
+        screenshotLabel: "Enable rule within Windows Firewall",
       },
       {
         heading: "Network Configuration for a Windows Domain Controller",
