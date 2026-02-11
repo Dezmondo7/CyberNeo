@@ -24,7 +24,7 @@ export function Hero() {
       <div className="max-w-4xl mx-auto text-center">
         <div className="flex items-center justify-center gap-3 mb-6">
           <div className="h-px w-12 bg-primary" />
-          <span className="text-primary font-mono text-sm tracking-wider">CYBERSECURITY SPECIALIST</span>
+          <span className="text-primary font-mono text-sm tracking-wider">CYBERSECURITY</span>
           <div className="h-px w-12 bg-primary" />
         </div>
         
@@ -38,9 +38,7 @@ export function Hero() {
         </p>
 
         <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-12">
-          I specialize in penetration testing, threat intelligence, and building resilient security architectures. 
-          With over 5 years of experience protecting enterprise systems, I help organizations identify vulnerabilities 
-          before malicious actors do.
+          Security Researcher & Engineer with a Top 7% TryHackMe ranking and a background in full-stack development and security consultancy. I specialize in simulating enterprise-scale Offensive and Defensive scenarios within virtualized environments, with expertise in Active Directory and SIEM orchestration. Currently transitioning 5 years of experience within the cybersecurity ecosystem into a dedicated technical role, combining a developer’s logic with a researcher’s mindset to secure complex infrastructures.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mb-16">
