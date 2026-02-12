@@ -3,6 +3,11 @@ import { Github, ExternalLink, Shield, Terminal, Lock, Bug } from "lucide-react"
 import { ProjectModal } from "../components/project-modal"
 import enableRule from "../assets/enable.png"
 import networkProtocol from "../assets/networkProtocol.png"
+import user from "../assets/user.png"
+import john from "../assets/john-loggin.png"
+import domain from "../assets/Domain_joined.png"
+import reconissance from "../assets/reconissance1.png"
+import smb from "../assets/attacksmbclient.png"
 
 const projects = [
   {
@@ -82,11 +87,36 @@ const projects = [
         screenshotLabel: "Windows Network Configuration",
       },
       {
-        heading: "Active Directory ",
-        text: "CryptoVault continuously monitors known breach databases using k-anonymity to check compromised credentials without exposing user data. Users receive instant alerts if any stored credentials appear in new data breaches.",
-        screenshot: null,
-        screenshotLabel: "CryptoVault - Alerts",
+        heading: "Active Directory Organisational Unit ",
+        text: " I structured Organizational Units (OUs) and domain user accounts within Active Directory to simulate a realistic enterprise environment and prepare for authentication and security testing. On the Domain Controller I opened Server Manager and navigated to Tools -> Active Directory Users and Computers and expanded to domain lab.local which opened the main directory management interface. I then created an Organizational Unit (OU) for better structure management. Steps right click lab.local select New -> Organizational Unit and named the OU User. The reason to use an OU is that it enables Group Policy targeting, allows logical separation of objects, improves manageability and mimics real enterprise structure. ",
+        screenshot: user,
+        screenshotLabel: "Organisation Unit - User",
       },
+      {
+        heading: "Weak Password Simulation",
+        text: "The next step was to create user accounts with weak passwords. This was done on deliberately to be able to simulate attacks on these later on. Steps, right click New -> User -> First Name -> Last Name -> next. Password configuration -> uncheck User must change password at next logon (for the purpose of this simulation only). I then tested the login on the windows machine by signing out and logging with the details for the user as shown on screen below. ",
+        screenshot: john,
+        screenshotLabel: "Organisation Unit - User",
+      },
+      {
+        heading: "Joining Windows 10 to DC",
+        text: "The reason for joining the Windows 10 machine to the Domain is so that the machine can trust and authenticate against the Domain Controller instead of only itself. This allows Users to login with credentials, Group Policy applies, Kerberos authentication is used and the machine becomes part of the domain security boundary. Behind the scenes when you enter Member of -> Domain -> Lab.local Windows does several things. It creates a Computer Account in Active Directory which looks like this [cn=win10$]. This $ means computer account and it generates its own password, authenticates to the DC like a user would and is stored in AD, effectively the machines are identities too. A secure trust relationship is established and Windows 10 and the DC share a machine password, a secure channel and Kerberos trust, this allows secure logon requests, ticket granting and policy enforcement. Previously the user logged in -> Windows checks local SAM database. The flow no goes User logs in -> Windows contacts DC -> Kerberos ticket issued -> User authenticated centrally.",
+        screenshot: domain,
+        screenshotLabel: "Organisation Unit - User",
+      },
+      {
+        heading: "Service Enumeration",
+        text: "After confirming the connection between Kali and the DOmain Controller using [ip a] and using [ping IP ADDRESS] it is time to move on to the first attack, service enumeration. The goal is to identify what services the Domain Controller exposes and what information I can gather. To do this I used Nmap and ran a scan using [sudo nmap -sS -T4 -Pn IP ADRESS], -sS stealth TCP scan, -T4 faster packet sending, -Pn assumes host is up skip ICMP, this scan will show open ports, service names and anything labeled Microsoft WIndows Active Directory. The Nmap scan has given me some valuable information. It shows open ports available, port 53 DNS domain naming zone information, 88 Kerberos ticket based auth (roasting attacks), 135 RPC service enumeration, 445 SMB shares (user enumartion and relay attacks), 389 LDAP AD User, group, computer objects & 636 Secure LDAP (still enumerable).",
+        screenshot: reconissance,
+        screenshotLabel: "Organisation Unit - User",
+      },
+      {
+        heading: "Anonymous SMB Enumeration",
+        text: "Phase two of the attack was to commit enumeration of the open SMB port using [smbclient -L //IP ADRESS] -L -> list shares, -N -> no password (anonymous). By running this command I am looking for a response from Domain Controller to see if it accepts ananymous SMB sessions. The response confirms unathenticated SMB access (null session) was permitted on the Domain Controller, confirming the ability to interact with SMB services without credentials",
+        screenshot:smb,
+        screenshotLabel: "SMB Enumeration",
+      }
+      
     ],
   },
   {
