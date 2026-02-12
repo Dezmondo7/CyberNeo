@@ -3,7 +3,7 @@ import { Mail, Cloud, Github, Linkedin, Twitter } from "lucide-react"
 const socials = [
   { icon: Github, label: "GitHub", href: "https://github.com/Dezmondo7", handle: "@dezmondo7" },
   { icon: Cloud, label: "TryHackMe", href: "https://tryhackme.com/p/Neophite", handle: "@Neophite" },
-  { icon: Twitter, label: "X", href: "https://x.com/", handle: "@alexchen_sec" },
+  { icon: Twitter, label: "X", href: "https://x.com/", handle: "@dale_sec" },
   { icon: Mail, label: "Email", href: "dalewarby23@outlook.com", handle: "dalewarby23@outlook.com" },
 ]
 
@@ -23,7 +23,7 @@ export function Contact() {
 
           {/* Text-left often reads better for long paragraphs, but text-center works for "Hero" styles */}
         <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-12 text-center">
-          For the past five years, I have pursued a rigorous, project-led path into Cybersecurity, 
+          I have pursued a rigorous, project-led path into Cybersecurity, 
           moving beyond theory to build and secure complex system architectures. My approach is 
           rooted in a <strong>'security-by-design'</strong> philosophy. I have engineered 
           custom applications specifically to implement and test <strong>OWASP Top 10</strong> mitigation 
