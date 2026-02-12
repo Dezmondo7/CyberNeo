@@ -5,7 +5,7 @@ import enableRule from "../assets/enable.png"
 import networkProtocol from "../assets/networkProtocol.png"
 import user from "../assets/user.png"
 import john from "../assets/john-loggin.png"
-import domain from "../assets/Domain_joined.png"
+import domain from "../assets/domain_joined.png"
 import reconissance from "../assets/reconissance1.png"
 import smb from "../assets/attacksmbclient.png"
 
