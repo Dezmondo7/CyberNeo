@@ -69,7 +69,7 @@ const projects = [
   {
     title: "Active Directory Attack & Defence lab",
     description: "Simulated real-world Active Directory attacks following enumeration to analyze domain weaknesses and security gaps.",
-    tech: ["Active Directory", "Winsows Server 2022", "Windows 10", "Kali Linux", "WMWare Worksation"],
+    tech: ["Active Directory", "Windows Server 2022", "Windows 10", "Kali Linux", "WMWare Worksation"],
     github: "#",
     live: "#",
     icon: Lock,
