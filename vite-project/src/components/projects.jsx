@@ -106,13 +106,13 @@ const projects = [
       },
       {
         heading: "Service Enumeration",
-        text: "After confirming the connection between Kali and the DOmain Controller using [ip a] and using [ping IP ADDRESS] it is time to move on to the first attack, service enumeration. The goal is to identify what services the Domain Controller exposes and what information I can gather. To do this I used Nmap and ran a scan using [sudo nmap -sS -T4 -Pn IP ADRESS], -sS stealth TCP scan, -T4 faster packet sending, -Pn assumes host is up skip ICMP, this scan will show open ports, service names and anything labeled Microsoft WIndows Active Directory. The Nmap scan has given me some valuable information. It shows open ports available, port 53 DNS domain naming zone information, 88 Kerberos ticket based auth (roasting attacks), 135 RPC service enumeration, 445 SMB shares (user enumartion and relay attacks), 389 LDAP AD User, group, computer objects & 636 Secure LDAP (still enumerable).",
+        text: "After confirming the connection between Kali and the Domain Controller using [ip a] and using [ping IP ADDRESS] it is time to move on to the first attack, service enumeration. The goal is to identify what services the Domain Controller exposes and what information I can gather. To do this I used Nmap and ran a scan using [sudo nmap -sS -T4 -Pn IP ADRESS], -sS stealth TCP scan, -T4 faster packet sending, -Pn assumes host is up skip ICMP, this scan will show open ports, service names and anything labelled Microsoft Windows Active Directory. The Nmap scan has given me some valuable information. It shows open ports available, port 53 DNS domain naming zone information, 88 Kerberos ticket based auth (roasting attacks), 135 RPC service enumeration, 445 SMB shares (user enumeration and relay attacks), 389 LDAP AD User, group, computer objects & 636 Secure LDAP (still enumerable).",
         screenshot: reconissance,
         screenshotLabel: "Organisation Unit - User",
       },
       {
         heading: "Anonymous SMB Enumeration",
-        text: "Phase two of the attack was to commit enumeration of the open SMB port using [smbclient -L //IP ADRESS] -L -> list shares, -N -> no password (anonymous). By running this command I am looking for a response from Domain Controller to see if it accepts ananymous SMB sessions. The response confirms unathenticated SMB access (null session) was permitted on the Domain Controller, confirming the ability to interact with SMB services without credentials",
+        text: "Phase two of the attack was to commit enumeration of the open SMB port using [smbclient -L //IP ADRESS] -L -> list shares, -N -> no password (anonymous). By running this command I am looking for a response from Domain Controller to see if it accepts anonymous SMB sessions. The response confirms unauthenticated SMB access (null session) was permitted on the Domain Controller, confirming the ability to interact with SMB services without credentials.",
         screenshot:smb,
         screenshotLabel: "SMB Enumeration",
       }
