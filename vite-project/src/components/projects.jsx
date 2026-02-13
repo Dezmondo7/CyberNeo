@@ -68,7 +68,7 @@ const projects = [
   },
   {
     title: "Active Directory Attack & Defence lab",
-    description: "Overview here TBA",
+    description: "Simulated real-world Active Directory attacks following enumeration to analyze domain weaknesses and security gaps.",
     tech: ["Active Directory", "Winsows Server 2022", "Windows 10", "Kali Linux", "WMWare Worksation"],
     github: "#",
     live: "#",
@@ -88,7 +88,7 @@ const projects = [
       },
       {
         heading: "Active Directory Organisational Unit ",
-        text: " I structured Organizational Units (OUs) and domain user accounts within Active Directory to simulate a realistic enterprise environment and prepare for authentication and security testing. On the Domain Controller I opened Server Manager and navigated to Tools -> Active Directory Users and Computers and expanded to domain lab.local which opened the main directory management interface. I then created an Organizational Unit (OU) for better structure management. Steps right click lab.local select New -> Organizational Unit and named the OU User. The reason to use an OU is that it enables Group Policy targeting, allows logical separation of objects, improves manageability and mimics real enterprise structure. ",
+        text: "I structured Organizational Units (OUs) and domain user accounts within Active Directory to simulate a realistic enterprise environment and prepare for authentication and security testing. On the Domain Controller I opened Server Manager and navigated to Tools -> Active Directory Users and Computers and expanded to domain lab.local which opened the main directory management interface. I then created an Organizational Unit (OU) for better structure management. Steps right click lab.local select New -> Organizational Unit and named the OU User. The reason to use an OU is that it enables Group Policy targeting, allows logical separation of objects, improves manageability and mimics real enterprise structure. ",
         screenshot: user,
         screenshotLabel: "Organisation Unit - User",
       },
