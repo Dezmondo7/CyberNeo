@@ -26,7 +26,7 @@ const projects = [
       },
       {
         heading: "How It Works",
-        text: "The scanner uses a multi-threaded crawling engine built with Selenium to navigate web applications like a real user. It then injects payloads and analyzes responses to detect vulnerabilities. Results are stored in PostgreSQL for tracking and reporting over time.",
+        text: "The scanner uses a multi-threaded crawling engine built with Selenium to navigate web applications like a real user. It then injects payloads and analyses responses to detect vulnerabilities. Results are stored in PostgreSQL for tracking and reporting over time.",
         screenshot: null,
         screenshotLabel: "VulnScanner - Scan Results",
       },
@@ -68,7 +68,7 @@ const projects = [
   },
   {
     title: "Active Directory Attack & Defence lab",
-    description: "Simulated real-world Active Directory attacks following enumeration to analyze domain weaknesses and security gaps.",
+    description: "Simulated real-world Active Directory attacks following enumeration to analyse domain weaknesses and security gaps.",
     tech: ["Active Directory", "Windows Server 2022", "Windows 10", "Kali Linux", "WMWare Worksation"],
     github: "#",
     live: "#",
