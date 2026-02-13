@@ -28,3 +28,7 @@ Styling: Tailwind CSS (Custom "Cyber" Theme with dark-mode optimization).
 Icons & Assets: React Icons for standardized professional branding.
 
 State Management: React Hooks (useState, useMemo) for efficient data sorting and CRUD logic.
+
+# Application Screenshot
+<img width="2176" height="8698" alt="serene-dieffenbachia-53d168 netlify app_" src="https://github.com/user-attachments/assets/7a637366-01bc-4520-8c48-23b2f7f43fad" />
+
