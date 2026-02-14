@@ -46,8 +46,8 @@ const certifications = [
     ],
   },
   {
-    name: "Web Development Bootcamp",
-    fullName: "Front End Web Development",
+    name: "Web Development",
+    fullName: "Ed-X Front End Web Development",
     issuer: "Ed-X",
     year: "2024",
      sections: [
@@ -66,14 +66,14 @@ const certifications = [
     ],
   },
   {
-    name: "AWS Security",
-    fullName: "AWS Certified Security - Specialty",
-    issuer: "Amazon Web Services",
+    name: "MS SC-900 (pending)",
+    fullName: "Microsoft Security, Compliance, and Identity Fundamentals",
+    issuer: "Microsoft",
     year: "2024",
       sections: [
       {
         heading: "About the Certification",
-        text: "The AWS Security Specialty certification validates advanced knowledge of securing workloads on Amazon Web Services. It covers incident response, logging and monitoring, infrastructure security, identity and access management, and data protection in the AWS cloud.",
+        text: "This certification covers foundational knowledge of security, compliance, and identity (SCI) concepts, as well as related solutions across Microsoft Azure and Microsoft 365. ",
         image: null,
         imageLabel: "AWS Security Certificate",
       },

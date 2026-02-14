@@ -42,7 +42,7 @@ const projects = [
     sections: [
       {
         heading: "Overview",
-        text: "ThreatMap Dashboard provides real-time visibility into the global threat landscape. It aggregates intelligence feeds from over 20 sources and presents actionable insights through interactive maps, timelines, and relationship graphs.",
+        text: "This repository contains a comprehensive technical analysis of the LAMP stack (Linux, Apache, MySQL, PHP). The research explores the underlying software components, evaluates the trade-offs between open-source and proprietary infrastructure (e.g., Linux vs. Windows, MySQL vs. Oracle), and analyzes the security implications of web-scale deployments.",
         screenshot: null,
         screenshotLabel: "ThreatMap - Global View",
       },
@@ -97,8 +97,7 @@ const projects = [
         text: "Phase two of the attack was to commit enumeration of the open SMB port using [smbclient -L //IP ADRESS] -L -> list shares, -N -> no password (anonymous). By running this command I am looking for a response from Domain Controller to see if it accepts anonymous SMB sessions. The response confirms unauthenticated SMB access (null session) was permitted on the Domain Controller, confirming the ability to interact with SMB services without credentials.",
         screenshot:smb,
         screenshotLabel: "SMB Enumeration",
-      }
-      
+      }     
     ],
   },
   {
