@@ -38,7 +38,7 @@ export function Hero() {
         </p>
 
         <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-12">
-          Security Researcher & Engineer with a Top 7% TryHackMe ranking and a background in full-stack development and security consultancy. I specialize in simulating enterprise-scale Offensive and Defensive scenarios within virtualized environments, with expertise in Active Directory and SIEM orchestration. Currently transitioning 5 years of experience within the cybersecurity ecosystem into a dedicated technical role, combining a developer’s logic with a researcher’s mindset to secure complex infrastructures.
+          Security Researcher & Engineer with a Top 7% TryHackMe ranking and a background in web development and security consultancy. I specialize in simulating enterprise-scale Offensive and Defensive scenarios within virtualized environments, with expertise in Active Directory and SIEM orchestration. Currently transitioning 5 years of experience within the cybersecurity ecosystem into a dedicated technical role, combining a developer’s logic with a researcher’s mindset to secure complex infrastructures.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mb-16">

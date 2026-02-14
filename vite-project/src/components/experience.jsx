@@ -4,15 +4,15 @@ const experiences = [
   {
     period: "2025 — Present",
     title: "Cyber Security Student",
-    company: "Tameside College",
-    description: "Currently completing Level 4 Cyber Security certification with a focus on advanced theoretical analysis of attack vectors and multi-layered defense mechanisms",
+    company: "Tameside College | Trafford & Stockport College",
+    description: "Currently completing Level 4 Cyber Security certification with a focus on advanced theoretical analysis of attack vectors and multi-layered defense mechanisms.",
     skills: ["Penetration Testing", "Python", "Burp Suite", "AWS Security"],
     link: "#",
   },
   {
     period: "2020 — 2025",
     title: "IT & Cyber Security Consultant",
-    company: "Virtuso Solutions",
+    company: "Virtuoso Solutions",
     description: "Strategic provider of specialist IT and cybersecurity consultancy, dedicated to the successful execution of enterprise-level digital transformations. Proven track record in managing high-stakes projects, ranging cloud transitions to robust security policy implementation.",
     skills: ["SIEM", "Threat Intelligence", "Splunk", "Incident Response"],
     link: "#",
@@ -22,7 +22,7 @@ const experiences = [
     title: "IT & Cyber Security Consultant",
     company: "Robert Walters",
     description: "Delivered high-impact IT and cybersecurity consultancy for enterprise-scale programs. Specialized in deploying expert consultants to lead mission-critical initiatives, including contactless ticketing systems, cloud migrations, security framework development, and comprehensive network refreshes.",
-    skills: ["Consulting", "Project Resource", "Contracts", "Cyber Secuirty", "cloud"],
+    skills: ["Cyber Consulting", "Governance", "Risk", "Cisco", "Azure Cloud"],
     link: "#",
   },
 ]

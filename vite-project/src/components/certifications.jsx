@@ -66,22 +66,16 @@ const certifications = [
     ],
   },
   {
-    name: "MS SC-900 (pending)",
+    name: "MS SC-900 (Studying)",
     fullName: "Microsoft Security, Compliance, and Identity Fundamentals",
     issuer: "Microsoft",
-    year: "2024",
+    year: "",
       sections: [
       {
         heading: "About the Certification",
         text: "This certification covers foundational knowledge of security, compliance, and identity (SCI) concepts, as well as related solutions across Microsoft Azure and Microsoft 365. ",
         image: null,
-        imageLabel: "AWS Security Certificate",
-      },
-      {
-        heading: "Skills Gained",
-        text: "This certification enhanced my ability to secure cloud-native architectures using AWS services such as IAM, KMS, GuardDuty, Security Hub, WAF, and CloudTrail. I gained hands-on expertise in building secure, compliant infrastructure at scale.",
-        image: null,
-        imageLabel: null,
+        imageLabel: "",
       },
     ],
   },

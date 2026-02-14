@@ -8,6 +8,8 @@ import john from "../assets/john-loggin.png"
 import domain from "../assets/domain.png"
 import reconissance from "../assets/reconissance1.png"
 import smb from "../assets/attacksmbclient.png"
+import cyberplanning from "../assets/cyberplanning.png"
+import cyberresearch from "../assets/cyberresearch.png"
 
 const projects = [
   {
@@ -19,32 +21,26 @@ const projects = [
     icon: Bug,
     sections: [
       {
-        heading: "How It Works",
-        text: "The scanner uses a multi-threaded crawling engine built with Selenium to navigate web applications like a real user. It then injects payloads and analyses responses to detect vulnerabilities. Results are stored in PostgreSQL for tracking and reporting over time.",
-        screenshot: null,
+        heading: "Overview",
+        text: "This repository contains a deep-dive technical planning document centered on the ARM-based hardware architecture (Raspberry Pi 4B) and software powering a LAMP stack. The full paper can be accessed via the source in the GitHub link above.",
+        screenshot: cyberplanning,
         screenshotLabel: "VulnScanner - Scan Results",
-      },
-      {
-        heading: "Key Features",
-        text: "Features include customizable scan profiles, scheduled automated scans, PDF report generation, integration with Jira for ticket creation, and a risk scoring system that prioritizes findings by severity and exploitability.",
-        screenshot: null,
-        screenshotLabel: "VulnScanner - Report View",
       },
     ],
   },
   {
-    title: "Cyber LAMP stack Research Paper",
-    description: "Technical analysis of LAMP stack including trade off between open-source and proprietary infrastructure and the secure implications of web-scale deployments.",
+    title: "Cyber LAMP Stack Research Paper",
+    description: "  Technical analysis of LAMP stack including trade off between open-source and proprietary infrastructure and the secure implications of web-scale deployments.",
     tech: ["Linux", "Apache", "MySQL", "PHP"],
-    github: "#",
+    github: "https://github.com/Dezmondo7/Technical-Research-Papers",
     live: "#",
     icon: Shield,
     sections: [
       {
         heading: "Overview",
-        text: "This repository contains a comprehensive technical analysis of the LAMP stack (Linux, Apache, MySQL, PHP). The research explores the underlying software components, evaluates the trade-offs between open-source and proprietary infrastructure (e.g., Linux vs. Windows, MySQL vs. Oracle), and analyzes the security implications of web-scale deployments.",
-        screenshot: null,
-        screenshotLabel: "ThreatMap - Global View",
+        text: "This repository contains a comprehensive technical analysis of the LAMP stack (Linux, Apache, MySQL, PHP). The research explores the underlying software components, evaluates the trade-offs between open-source and proprietary infrastructure (e.g., Linux vs. Windows, MySQL vs. Oracle), and analyzes the security implications of web-scale deployments. The full paper can be accessed via source in the GitHub link above.",
+        screenshot: cyberresearch,
+        screenshotLabel: "Cyber Security Research Paper",
       },
     ],
   },
