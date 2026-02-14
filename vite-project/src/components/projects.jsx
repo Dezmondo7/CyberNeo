@@ -11,19 +11,13 @@ import smb from "../assets/attacksmbclient.png"
 
 const projects = [
   {
-    title: "VulnScanner Pro",
-    description: "An automated vulnerability scanning tool that identifies common web application security flaws including SQL injection, XSS, and CSRF vulnerabilities.",
-    tech: ["Python", "Selenium", "BeautifulSoup", "PostgreSQL"],
-    github: "#",
+    title: "Cyber Planning Research Paper",
+    description: "Technical documentation outlining hardware and software analysis. The research focuses on quantative performance modeling, calculating exact CPU cycle allocation for dynamic web requests. ",
+    tech: ["SoC Architecture", "Quad-core", "CPU", "PCI-DSS"],
+    github: "https://github.com/Dezmondo7/Technical-Research-Papers",
     live: "#",
     icon: Bug,
     sections: [
-      {
-        heading: "Overview",
-        text: "VulnScanner Pro is a comprehensive automated vulnerability scanning tool designed to help security professionals identify common web application security flaws. It performs deep crawling and testing against OWASP Top 10 vulnerabilities including SQL injection, XSS, and CSRF.",
-        screenshot: null,
-        screenshotLabel: "VulnScanner - Dashboard",
-      },
       {
         heading: "How It Works",
         text: "The scanner uses a multi-threaded crawling engine built with Selenium to navigate web applications like a real user. It then injects payloads and analyses responses to detect vulnerabilities. Results are stored in PostgreSQL for tracking and reporting over time.",
@@ -39,9 +33,9 @@ const projects = [
     ],
   },
   {
-    title: "ThreatMap Dashboard",
-    description: "Real-time threat intelligence dashboard that aggregates data from multiple sources and visualizes attack patterns and threat actor activities.",
-    tech: ["React", "D3.js", "Node.js", "Elasticsearch"],
+    title: "Cyber LAMP stack Research Paper",
+    description: "Technical analysis of LAMP stack including trade off between open-source and proprietary infrastructure and the secure implications of web-scale deployments.",
+    tech: ["Linux", "Apache", "MySQL", "PHP"],
     github: "#",
     live: "#",
     icon: Shield,
@@ -51,18 +45,6 @@ const projects = [
         text: "ThreatMap Dashboard provides real-time visibility into the global threat landscape. It aggregates intelligence feeds from over 20 sources and presents actionable insights through interactive maps, timelines, and relationship graphs.",
         screenshot: null,
         screenshotLabel: "ThreatMap - Global View",
-      },
-      {
-        heading: "Data Pipeline",
-        text: "The backend ingests threat data using Node.js workers that normalize and enrich indicators of compromise (IOCs). Elasticsearch powers the search and analytics engine, enabling sub-second queries across millions of threat events.",
-        screenshot: null,
-        screenshotLabel: "ThreatMap - Data Flow",
-      },
-      {
-        heading: "Visualization",
-        text: "D3.js powers the interactive visualizations including a geo-mapped attack surface, threat actor relationship graphs, and temporal attack pattern analysis. Users can drill down into any data point for detailed threat intelligence.",
-        screenshot: null,
-        screenshotLabel: "ThreatMap - Analytics",
       },
     ],
   },
