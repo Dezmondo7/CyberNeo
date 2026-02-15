@@ -30,7 +30,7 @@ State Management: React Hooks (useState, useMemo) for efficient data sorting and
 # Application Screenshot
 The site is live at https://serene-dieffenbachia-53d168.netlify.app/
 
-<img width="560" alt="localhost_5192_ (1)" src="https://github.com/user-attachments/assets/99ff62a4-c337-4c4f-b194-78354e712956" />
+<img width="860" alt="localhost_5192_ (1)" src="https://github.com/user-attachments/assets/99ff62a4-c337-4c4f-b194-78354e712956" />
 
 
 
