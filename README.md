@@ -28,6 +28,7 @@ Icons & Assets: React Icons for standardized professional branding.
 State Management: React Hooks (useState, useMemo) for efficient data sorting and CRUD logic.
 
 # Live Application 
+🏗️ Note: This repository is part of an active cybersecurity research project. Documentation and lab write-ups are currently being synchronized from local environments. Please check back for updates.
 The site is live at https://serene-dieffenbachia-53d168.netlify.app/
 
 
