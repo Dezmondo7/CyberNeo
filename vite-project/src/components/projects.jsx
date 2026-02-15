@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Github, ExternalLink, Shield, Terminal, Lock, Bug } from "lucide-react"
+import { Github, ExternalLink, Shield, Terminal, Lock, Bug, Cloud } from "lucide-react"
 import { ProjectModal } from "../components/project-modal"
 import enableRule from "../assets/enable.png"
 import networkProtocol from "../assets/networkProtocol.png"
@@ -10,6 +10,7 @@ import reconissance from "../assets/reconissance1.png"
 import smb from "../assets/attacksmbclient.png"
 import cyberplanning from "../assets/cyberplanning.png"
 import cyberresearch from "../assets/cyberresearch.png"
+import aiclip from "../assets/aiclip.mp4"
 
 const projects = [
   {
@@ -48,7 +49,7 @@ const projects = [
     title: "Active Directory Attack & Defence lab",
     description: "Simulated real-world Active Directory attacks following enumeration to analyse domain weaknesses and security gaps.",
     tech: ["Active Directory", "Windows Server 2022", "Windows 10", "Kali Linux", "WMWare Worksation"],
-    github: "#",
+    github: "https://github.com/Dezmondo7/ActiveDirectoryAttack",
     live: "#",
     icon: Lock,
     sections: [
@@ -97,30 +98,51 @@ const projects = [
     ],
   },
   {
-    title: "NetRecon",
-    description: "Network reconnaissance toolkit for authorized penetration testing. Includes port scanning, service enumeration, and OS fingerprinting.",
-    tech: ["Go", "Nmap", "Docker", "gRPC"],
-    github: "#",
+    title: "Secure OpenAI Chat GPT4.0 Implementation",
+    description: "Secure API Implementation. Engineered a secure 'handshake' between a frontend interface and the OpenAI API.",
+    tech: ["React", "GPT-4", "API", "JSON"],
+    github: "https://github.com/Dezmondo7/KreativeWeb3D/blob/main/src/components/AiCreative.jsx",
+    live: "#",
+    icon: Cloud,
+     sections: [
+      {
+        heading: "Secure LLM Integration",
+        text: "This project implements a production-grade integration with GPT-4o, prioritizing a 'Security-First' architectural pattern. By engineering a custom Node.js/Express backend proxy, I eliminated the risk of client-side credential exposure, ensuring all API interactions are brokered through a secure server-side environment. The system utilizes environment variable management for secret isolation and implements defensive measures against Prompt Injection and API Rate-Limiting abuse.",
+        video: aiclip,
+        screenshot: null,
+        screenshotLabel: "NetRecon - Terminal Output",
+      },
+    ],
+  },
+    {
+    title: "Secure Cloud-to-Frontend Data Pipeline ",
+    description: "Secure data pipleine from front end telematic data capture to proxy server and stored in Supabase.",
+    tech: ["React", "Node.js", "Express.js", "Row-Level-Security"],
+    github: "",
+    live: "#",
+    icon: Cloud,
+     sections: [
+      {
+        heading: "Front-End Capture",
+        text: "Collects real-time telematic data (e.g., user interaction, system performance, or 3D coordinate data) using React.",
+        screenshot: null,
+        screenshotLabel: "NetRecon - Terminal Output",
+      },
+    ],
+  },
+    {
+    title: "Credential Leak Remediation & Environment Hardening ",
+    description: "Publishable API credentials were exposed, Row-Level-Security provided a layer of security but in order to harden the environment the follwing steps were taken.",
+    tech: ["React", "API", "Node.js", "Row-Level-Security"],
+    github: "",
     live: "#",
     icon: Terminal,
      sections: [
       {
-        heading: "Overview",
-        text: "NetRecon is a high-performance network reconnaissance toolkit designed for authorized penetration testers. Written in Go for speed and concurrency, it combines multiple scanning techniques into a unified workflow with structured output.",
+        heading: "Containment & Isolation",
+        text: "Moved all API keys from the application logic into a root-level .env file. Revoked the exposed legacy JWT keys in the Supabase and EmailJS dashboards. Generated new Publishable (client-side) and Secret (server-side) keys using the modern sb_ prefix format, ensuring a clean break from the compromised credentials. erified the frontend used the Vite-specific import.meta.env syntax, while the backend utilized Node.js process.env. Confirmed that the 'Kreative' dashboard could successfully log events and interact with the database using the new secure configuration.",
         screenshot: null,
         screenshotLabel: "NetRecon - Terminal Output",
-      },
-      {
-        heading: "Scanning Engine",
-        text: "The scanning engine leverages Go's goroutines for massively parallel port scanning and service enumeration. It integrates with Nmap for advanced OS fingerprinting and supports custom NSE scripts for targeted service detection.",
-        screenshot: null,
-        screenshotLabel: "NetRecon - Scan Config",
-      },
-      {
-        heading: "Deployment & Integration",
-        text: "NetRecon ships as a Docker container for easy deployment and reproducible environments. It exposes a gRPC API for integration with other tools and CI/CD pipelines, enabling automated security testing in DevSecOps workflows.",
-        screenshot: null,
-        screenshotLabel: "NetRecon - Docker Setup",
       },
     ],
   },
