@@ -1,6 +1,6 @@
 # CyberCert & Lab-Tracker
 Professional Certification & Security Laboratory Dashboard
-This project is a high-performance, application designed to serve as a centralized hub for tracking professional cyber security certifications and documenting hands-on laboratory experiments. Built with React and Tailwind CSS, the application utilizes a "Zero-Trust" frontend architecture to manage and display complex career data and technical project outcomes.
+This project is a high-performance, application designed to serve as a centralized hub for tracking professional cyber security certifications and documenting hands-on laboratory experiments. Built with React and Tailwind CSS, the application utilizes a "Zero-Trust" frontend architecture to manage and display complex career data and technical project outcomes. This portfolio represents full-stack security architecture, environment hardening techniques and hands on lab work.
 
 # Core Functionality
 Certification Lifecycle Management: A dedicated CRUD interface to monitor progress, expiry dates, and achievement status for industry-standard certifications (e.g., CompTIA, TryHackMe, Level 4 Cyber Security).
