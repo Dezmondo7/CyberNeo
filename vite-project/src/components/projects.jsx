@@ -17,6 +17,7 @@ import postgreSQL from "../assets/postgreslogs2.png"
 import telematic2 from "../assets/telematicentry2.png"
 import loadingstate from "../assets/loadingstate.png"
 import aireturned from "../assets/returnedresponse.png"
+import structuredfile from "../assets/filstructure.png"
 
 
 
@@ -181,9 +182,9 @@ const projects = [
      sections: [
       {
         heading: "Containment & Isolation",
-        text: "Moved all API keys from the application logic into a root-level .env file. Revoked the exposed legacy JWT keys in the Supabase and EmailJS dashboards. Generated new Publishable (client-side) and Secret (server-side) keys using the modern sb_ prefix format, ensuring a clean break from the compromised credentials. erified the frontend used the Vite-specific import.meta.env syntax, while the backend utilized Node.js process.env. Confirmed that the 'Kreative' dashboard could successfully log events and interact with the database using the new secure configuration.",
-        screenshot: null,
-        screenshotLabel: "NetRecon - Terminal Output",
+        text: "Moved all API keys from the application logic into a root-level .env file. Revoked the exposed legacy JWT keys in the Supabase and EmailJS dashboards. Generated new Publishable (client-side) and Secret (server-side) keys using the modern sb_ prefix format, ensuring a clean break from the compromised credentials. Verified the frontend used the Vite-specific import.meta.env syntax, while the backend utilized Node.js process.env. Confirmed that the 'Kreative' dashboard could successfully log events and interact with the database using the new secure configuration. The screenshot depicts a clean file structure with front-end and back-end sensitive API Keys and database strings stored in .env files with .gitignore ensuring files stay hidden and unpublished mitigating the risk of stolen credentials. Having the variables stored this way is a key principle of Cloud-Native Security.  ",
+        screenshot: structuredfile,
+        screenshotLabel: "VS Code File Structure for Web Application",
       },
     ],
   },
