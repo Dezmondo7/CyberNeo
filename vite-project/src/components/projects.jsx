@@ -11,6 +11,12 @@ import smb from "../assets/attacksmbclient.png"
 import cyberplanning from "../assets/cyberplanning.png"
 import cyberresearch from "../assets/cyberresearch.png"
 import aiclip from "../assets/aiclip.mp4"
+import telematicLogging from "../assets/telematiclogging.png"
+import aeslog from "../assets/postgreSQLaes.png"
+import postgreSQL from "../assets/postgreslogs2.png"
+import telematic2 from "../assets/telematicentry2.png"
+
+
 
 const projects = [
   {
@@ -46,9 +52,9 @@ const projects = [
     ],
   },
   {
-    title: "Active Directory Attack & Defence lab",
+    title: "Active Directory Domain Controller Enumeration",
     description: "Simulated real-world Active Directory attacks following enumeration to analyse domain weaknesses and security gaps.",
-    tech: ["Active Directory", "Windows Server 2022", "Windows 10", "Kali Linux", "WMWare Worksation"],
+    tech: ["VMWare", "Active Directory", "NMap", "Kali Linux",],
     github: "https://github.com/Dezmondo7/ActiveDirectoryAttack",
     live: "#",
     icon: Lock,
@@ -99,7 +105,7 @@ const projects = [
   },
   {
     title: "Secure OpenAI Chat GPT4.0 Implementation",
-    description: "Secure API Implementation. Engineered a secure 'handshake' between a frontend interface and the OpenAI API.",
+    description: "Secure API Implementation. Engineered a secure 'handshake' between a front-end interface and the OpenAI API.",
     tech: ["React", "GPT-4", "API", "JSON"],
     github: "https://github.com/Dezmondo7/KreativeWeb3D/blob/main/src/components/AiCreative.jsx",
     live: "#",
@@ -107,7 +113,7 @@ const projects = [
      sections: [
       {
         heading: "Secure LLM Integration",
-        text: "This project implements a production-grade integration with GPT-4o, prioritizing a 'Security-First' architectural pattern. By engineering a custom Node.js/Express backend proxy, I eliminated the risk of client-side credential exposure, ensuring all API interactions are brokered through a secure server-side environment. The system utilizes environment variable management for secret isolation and implements defensive measures against Prompt Injection and API Rate-Limiting abuse.",
+        text: "This project implements a production-grade integration with GPT-4o, prioritizing a 'Security-First' architectural pattern. By engineering a custom Node.js/Express backend proxy, I eliminated the risk of client-side credential exposure, ensuring all API interactions are brokered through a secure server-side environment. The system utilizes environment variable management for secret isolation and implements defensive measures against Prompt Injection and API Rate-Limiting abuse. The specific code is available via the GitHub link.",
         video: aiclip,
         screenshot: null,
         screenshotLabel: "NetRecon - Terminal Output",
@@ -115,18 +121,24 @@ const projects = [
     ],
   },
     {
-    title: "Secure Cloud-to-Frontend Data Pipeline ",
-    description: "Secure data pipleine from front end telematic data capture to proxy server and stored in Supabase.",
+    title: "Secure Front-End-to-Cloud Data Pipeline ",
+    description: "Secure data pipleine from front-end telematic data capture to proxy server and stored in Supabase. Zero trust architecture ensured database remains shielded from public exposure.",
     tech: ["React", "Node.js", "Express.js", "Row-Level-Security"],
     github: "",
     live: "#",
     icon: Cloud,
      sections: [
       {
-        heading: "Front-End Capture",
-        text: "Collects real-time telematic data (e.g., user interaction, system performance, or 3D coordinate data) using React.",
-        screenshot: null,
-        screenshotLabel: "NetRecon - Terminal Output",
+        heading: "Front-End Telematic Data Capture and Cloud Server Logging",
+        text: "Architected and engineered a resilient and secure database proxy server using Express.js for real-time data handling. Focused on end-to-end encryption and the implementation of Row Level Security (RLS) policies with the use of a cloud server (Render) to ensure that even if an API key is intercepted, the data remains scoped and protected. Below is an image of Live user interactions stored as 'Mouse moves' which are then logged via the Express.js server.",
+        screenshot: telematicLogging,
+        screenshotLabel: "Front-End Telemtic data logged via cloud server",
+      },
+        {
+        heading: "Zero Trust Database Architecture",
+        text: "Engineered a high-concurerncy PostgreSQL database via Supabase, architected to recieve real-time telemetry from an Express.js proxy server. The schema is optmimized for high velocity data streams capabale of handling asynchronous requests while maintaining data integrity across 50,000 records. By engineering a client side proxy this ensures that the database remained shielded from direct public exposure, upholding a zero trust architecture.",
+        screenshot: telematic2,
+        screenshotLabel: "Supabse data logged via cloud server",
       },
     ],
   },
@@ -143,6 +155,28 @@ const projects = [
         text: "Moved all API keys from the application logic into a root-level .env file. Revoked the exposed legacy JWT keys in the Supabase and EmailJS dashboards. Generated new Publishable (client-side) and Secret (server-side) keys using the modern sb_ prefix format, ensuring a clean break from the compromised credentials. erified the frontend used the Vite-specific import.meta.env syntax, while the backend utilized Node.js process.env. Confirmed that the 'Kreative' dashboard could successfully log events and interact with the database using the new secure configuration.",
         screenshot: null,
         screenshotLabel: "NetRecon - Terminal Output",
+      },
+    ],
+  },
+  {
+    title: "Supabase Log Analysis",
+    description: "To validate the integrity of the data pipeline, I conducted a comprehensive security audit of the PostgreSQL logs.",
+    tech: ["PostgreSQL", "SSL", "AES", "SHA-256"],
+    github: "",
+    live: "#",
+    icon: Cloud,
+     sections: [
+      {
+        heading: "AES Encryption Confirmed",
+        text: "The below log shows SSL enable (prtocol=TLSv1.3, cipher=TLS_AES_256_GCM_SHA384). This ensures that the data is using 256-bit AES encryption to which prevents 'Man-in-the-Middle' (MITM) attacks during transit. ",
+        screenshot: aeslog,
+        screenshotLabel: "Telematic Data Logs in Supabase",
+      },
+        {
+        heading: "SHA-256 Authentication",
+        text: "The above log (method=scram-sha-256) confirms a robust password hashing that uses salted, challenge-response authentication which mitigates against packet sniffing and replay attacks.",
+        screenshot: postgreSQL,
+        screenshotLabel: "Detailed Log Image in Supabase",
       },
     ],
   },
