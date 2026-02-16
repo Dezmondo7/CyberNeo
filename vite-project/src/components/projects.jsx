@@ -168,13 +168,13 @@ const projects = [
      sections: [
       {
         heading: "AES Encryption Confirmed",
-        text: "The below log shows SSL enable (prtocol=TLSv1.3, cipher=TLS_AES_256_GCM_SHA384). This ensures that the data is using 256-bit AES encryption to which prevents 'Man-in-the-Middle' (MITM) attacks during transit. ",
+        text: "The below log shows SSL enable (prtocol=TLSv1.3, cipher=TLS_AES_256_GCM_SHA384). This ensures that the data is using 256-bit AES encryption which prevents 'Man-in-the-Middle' (MITM) attacks during data transit. ",
         screenshot: aeslog,
         screenshotLabel: "Telematic Data Logs in Supabase",
       },
         {
         heading: "SHA-256 Authentication",
-        text: "The above log (method=scram-sha-256) confirms a robust password hashing that uses salted, challenge-response authentication which mitigates against packet sniffing and replay attacks.",
+        text: "Supabase log below outlines (method=scram-sha-256) confirmation of a robust password hashing that uses salted, challenge-response authentication which mitigates against packet sniffing and replay attacks.",
         screenshot: postgreSQL,
         screenshotLabel: "Detailed Log Image in Supabase",
       },
