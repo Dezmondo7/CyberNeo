@@ -110,7 +110,7 @@ const projects = [
     title: "Secure OpenAI Chat GPT4.0 Implementation",
     description: "Secure API Implementation. Engineered a secure 'handshake' between a front-end interface and the OpenAI API integrating asynchronous data flow from user input, loading and response.",
     tech: ["React", "GPT-4", "API", "Express.js"],
-    github: "https://github.com/Dezmondo7/KreativeWeb3D/blob/main/src/components/AiCreative.jsx",
+    github: "https://github.com/Dezmondo7/KreativeWeb3D/blob/main/backend/index.js",
     live: "#",
     icon: Cloud,
      sections: [
@@ -132,7 +132,7 @@ const projects = [
     title: "Secure Front-End-to-Cloud Data Pipeline ",
     description: "Secure data pipleine from front-end telematic data capture to proxy server and stored in Supabase. Zero trust architecture ensured database remains shielded from public exposure.",
     tech: ["React", "Express.js", "Supabase", "Row-Level-Security"],
-    github: "",
+    github: "https://github.com/Dezmondo7/KreativeWeb3D/blob/main/backend/testServer.js",
     live: "#",
     icon: Cloud,
      sections: [

@@ -76,13 +76,6 @@ export function ProjectModal({ project, isOpen, onClose }) {
               <Github className="w-4 h-4" />
               View Source
             </a>
-            <a
-              href={project.live}
-              className="flex items-center gap-2 px-4 py-2 text-sm bg-primary text-primary-foreground rounded-md hover:opacity-90 transition-opacity"
-            >
-              <ExternalLink className="w-4 h-4" />
-              Live Demo
-            </a>
           </div>
 
           {/* Sections */}
