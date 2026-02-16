@@ -15,6 +15,8 @@ import telematicLogging from "../assets/telematiclogging.png"
 import aeslog from "../assets/postgreSQLaes.png"
 import postgreSQL from "../assets/postgreslogs2.png"
 import telematic2 from "../assets/telematicentry2.png"
+import loadingstate from "../assets/loadingstate.png"
+import aireturned from "../assets/returnedresponse.png"
 
 
 
@@ -105,25 +107,30 @@ const projects = [
   },
   {
     title: "Secure OpenAI Chat GPT4.0 Implementation",
-    description: "Secure API Implementation. Engineered a secure 'handshake' between a front-end interface and the OpenAI API.",
-    tech: ["React", "GPT-4", "API", "JSON"],
+    description: "Secure API Implementation. Engineered a secure 'handshake' between a front-end interface and the OpenAI API integrating asynchronous data flow from user input, loading and response.",
+    tech: ["React", "GPT-4", "API", "Express.js"],
     github: "https://github.com/Dezmondo7/KreativeWeb3D/blob/main/src/components/AiCreative.jsx",
     live: "#",
     icon: Cloud,
      sections: [
       {
         heading: "Secure LLM Integration",
-        text: "This project implements a production-grade integration with GPT-4o, prioritizing a 'Security-First' architectural pattern. By engineering a custom Node.js/Express backend proxy, I eliminated the risk of client-side credential exposure, ensuring all API interactions are brokered through a secure server-side environment. The system utilizes environment variable management for secret isolation and implements defensive measures against Prompt Injection and API Rate-Limiting abuse. The specific code is available via the GitHub link.",
-        video: aiclip,
-        screenshot: null,
-        screenshotLabel: "NetRecon - Terminal Output",
+        text: "This project implements a production-grade integration with GPT-4o, prioritizing a 'Security-First' architectural pattern. By engineering a custom Node.js/Express backend proxy, I eliminated the risk of client-side credential exposure, ensuring all API interactions are brokered through a secure server-side environment. The system utilizes environment variable management for secret isolation and implements defensive measures against Prompt Injection. The screenshot below shows the loading state which masks a server side request routed through the Express.js middleware, ensuring the client-side never has direct exposure to the OpenAI endpoint.",
+        screenshot: loadingstate,
+        screenshotLabel: "OpenAI loading repsonse via Express.js middleware",
+      },
+         {
+        heading: "Credential Isolation & Data Sanitization",
+        text: "By creating a secure environment and storing secret keys strictly as server-side variables it mitigates the risk of credential harvesting from the browser's network tab. Before the response is rendered data is sanitized ensuring that the AI's output adheres to the application's structured schema without introducing cross-site scripting (XSS) risks.",
+        screenshot: aireturned,
+        screenshotLabel: "OpenAI loading repsonse via Express.js middleware",
       },
     ],
   },
     {
     title: "Secure Front-End-to-Cloud Data Pipeline ",
     description: "Secure data pipleine from front-end telematic data capture to proxy server and stored in Supabase. Zero trust architecture ensured database remains shielded from public exposure.",
-    tech: ["React", "Node.js", "Express.js", "Row-Level-Security"],
+    tech: ["React", "Express.js", "Supabase", "Row-Level-Security"],
     github: "",
     live: "#",
     icon: Cloud,
@@ -143,25 +150,9 @@ const projects = [
     ],
   },
     {
-    title: "Credential Leak Remediation & Environment Hardening ",
-    description: "Publishable API credentials were exposed, Row-Level-Security provided a layer of security but in order to harden the environment the follwing steps were taken.",
-    tech: ["React", "API", "Node.js", "Row-Level-Security"],
-    github: "",
-    live: "#",
-    icon: Terminal,
-     sections: [
-      {
-        heading: "Containment & Isolation",
-        text: "Moved all API keys from the application logic into a root-level .env file. Revoked the exposed legacy JWT keys in the Supabase and EmailJS dashboards. Generated new Publishable (client-side) and Secret (server-side) keys using the modern sb_ prefix format, ensuring a clean break from the compromised credentials. erified the frontend used the Vite-specific import.meta.env syntax, while the backend utilized Node.js process.env. Confirmed that the 'Kreative' dashboard could successfully log events and interact with the database using the new secure configuration.",
-        screenshot: null,
-        screenshotLabel: "NetRecon - Terminal Output",
-      },
-    ],
-  },
-  {
     title: "Supabase Log Analysis",
-    description: "To validate the integrity of the data pipeline, I conducted a comprehensive security audit of the PostgreSQL logs.",
-    tech: ["PostgreSQL", "SSL", "AES", "SHA-256"],
+    description: "To validate the integrity of the data pipeline, I conducted a comprehensive security audit of the Supabase logs.",
+    tech: ["Supabase", "SSL", "AES", "SHA-256"],
     github: "",
     live: "#",
     icon: Cloud,
@@ -180,6 +171,23 @@ const projects = [
       },
     ],
   },
+    {
+    title: "Credential Leak Remediation & Environment Hardening ",
+    description: "Publishable API credentials were exposed, Row-Level-Security provided a layer of security but in order to harden the environment the follwing steps were taken.",
+    tech: ["React", "API", "Node.js", "Row-Level-Security"],
+    github: "",
+    live: "#",
+    icon: Terminal,
+     sections: [
+      {
+        heading: "Containment & Isolation",
+        text: "Moved all API keys from the application logic into a root-level .env file. Revoked the exposed legacy JWT keys in the Supabase and EmailJS dashboards. Generated new Publishable (client-side) and Secret (server-side) keys using the modern sb_ prefix format, ensuring a clean break from the compromised credentials. erified the frontend used the Vite-specific import.meta.env syntax, while the backend utilized Node.js process.env. Confirmed that the 'Kreative' dashboard could successfully log events and interact with the database using the new secure configuration.",
+        screenshot: null,
+        screenshotLabel: "NetRecon - Terminal Output",
+      },
+    ],
+  },
+
 ]
 
 export function Projects() {
