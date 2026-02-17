@@ -188,6 +188,16 @@ const projects = [
       },
     ],
   },
+     {
+    title: "Wazuh SIEM configuration and Alerts",
+    description: "Threat hunting exercise, configured Wazuh with the use of a script to deploy agents and monitor file integrity (FIM).",
+    tech: ["SIEM", "Wazuh", "Automation", "Python"],
+    github: "",
+    live: "#",
+    icon: Terminal,
+     sections: [
+    ],
+  },
 
 ]
 
