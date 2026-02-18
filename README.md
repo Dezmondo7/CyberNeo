@@ -33,7 +33,7 @@ The site is live at https://serene-dieffenbachia-53d168.netlify.app/
 
 Web Screenshot
 
-<img width="1936" alt="serene-dieffenbachia-53d168 netlify app_ (1)" src="https://github.com/user-attachments/assets/a165cce2-8e10-4393-a7b4-c814199554c9" />
+<img width="1936" Height="1200" alt="serene-dieffenbachia-53d168 netlify app_ (1)" src="https://github.com/user-attachments/assets/a165cce2-8e10-4393-a7b4-c814199554c9" />
 
 
 
