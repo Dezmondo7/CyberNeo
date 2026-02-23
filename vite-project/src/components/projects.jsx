@@ -18,7 +18,13 @@ import telematic2 from "../assets/telematicentry2.png"
 import loadingstate from "../assets/loadingstate.png"
 import aireturned from "../assets/returnedresponse.png"
 import structuredfile from "../assets/filstructure.png"
-
+import pythonScript from "../assets/pythonScript.png"
+import targetDomains from "../assets/domainE.png"
+import networkCode from "../assets/networkCode.png"
+import scappyI from "../assets/scappyI.png"
+import portScanner from "../assets/portScanner.png"
+import hashCracker from "../assets/hashCracker.png"
+import hashcracked from "../assets/hashCracked.png"
 
 
 const projects = [
@@ -189,8 +195,8 @@ const projects = [
     ],
   },
      {
-    title: "Wazuh SIEM configuration and Alerts",
-    description: "Threat hunting exercise, configured Wazuh with the use of a script to deploy agents and monitor file integrity (FIM).",
+    title: "Wazuh SIEM Configuration and Alerts",
+    description: "Threat hunting, configured Wazuh with the use of a script to deploy agents and monitor file integrity (FIM).",
     tech: ["SIEM", "Wazuh", "Automation", "Python"],
     github: "",
     live: "#",
@@ -198,6 +204,96 @@ const projects = [
      sections: [
     ],
   },
+  {
+    title: "Python Script for Directory Enumeration ",
+    description: "The project uses a python script to identify directories on the target system.",
+    tech: ["Linux", "Python", "Script", "Pentest"],
+    github: "",
+    live: "#",
+    icon: Terminal,
+     sections: [
+      {
+        heading: "Python script file creation",
+        text: "Created a new file for the python script using 'nano direnum.py' and inserted the script below and inserted the correct path for the wordlist of directories.",
+        screenshot: pythonScript,
+        screenshotLabel: "Python Script",
+      },
+      {
+        heading: "Run the Script",
+        text: "In the next step I initialized Python3 alongside the file containing the python script against the target IP address to identify directories on the target system.",
+        screenshot: targetDomains,
+        screenshotLabel: "Domain enumeration using Python3",
+      },
+    ],
+  },
+   {
+    title: "Python ICMP Network Scanner ",
+    description: "Built a ICMP (Internet Control Message Protocol) scanner using Python to identify potential targets on the network.",
+    tech: ["Linux", "Python", "Script", "Pentest"],
+    github: "",
+    live: "#",
+    icon: Terminal,
+     sections: [
+      {
+        heading: "Python network scanner creation",
+        text: "Created a new file for the python script using 'nano arp_scan.py' and inserted the code used to create the network scanner.",
+        screenshot: networkCode,
+        screenshotLabel: "Python Script",
+      },
+      {
+        heading: "Installing scapy",
+        text: "Python3 works in correlation with scapy to run network scanning scripts, once the scapy module was installed, python3 and the file with the correct IP address configured within the script runs the application.",
+        screenshot: scappyI,
+        screenshotLabel: "Domain enumeration using Python3",
+      },
+    ],
+  },
+  {
+    title: "Python Port Scanning Application ",
+    description: "Built a hash cracker using python.",
+    tech: ["Linux", "Python", "Script", "Pentest"],
+    github: "",
+    live: "#",
+    icon: Terminal,
+     sections: [
+      {
+        heading: "Port scanner script",
+        text: "Created a new file for the python script using 'nano port.py' and inserted the code used to create the port scanner. The scanner imports sys & socket to enable socket scanning. IP is specified to the target. An empty array is set to return detected ports. Ports that willbe probed can be set in ranges or across common ports using ports = { 21, 22, 80, 135 }. The script attempts to connect to the ports, once a connection is made a for loop iterates through the specified port list and returns the result.",
+        screenshot: portScanner,
+        screenshotLabel: "Port scanner python code",
+      },
+      {
+        heading: "Installing scapy",
+        text: "Python3 works in correlation with scapy to run network scanning scripts, once the scapy module was installed, python3 and the file with the correct IP address configured within the script runs the application.",
+        screenshot: scappyI,
+        screenshotLabel: "Domain enumeration using Python3",
+      },
+    ],
+  },
+   {
+    title: "Python Hash Cracking Application ",
+    description: "Built a hash cracker using python.",
+    tech: ["Linux", "Python", "Script", "Pentest"],
+    github: "",
+    live: "#",
+    icon: Terminal,
+     sections: [
+      {
+        heading: "Port scanner script",
+        text: " Created a new file for the python script using 'nano hashc.py' and inserted the code used to create the port scanner. The application imports hashlib which enables you to change to the required hash i.e MD5/SHA256. This application also reads from a selected wordlist.",
+        screenshot: hashCracker,
+        screenshotLabel: "Port scanner python code",
+      },
+      {
+        heading: "Cracking Hashes",
+        text: "By running the script with Python3, the chosen wordlist location and the correct hash, the application is able to crack hashes.",
+        screenshot: hashcracked,
+        screenshotLabel: "Domain enumeration using Python3",
+      },
+    ],
+  },
+  
+
 
 ]
 
