@@ -1,5 +1,5 @@
 # CyberCert & Lab-Tracker
-Professional Certification & Security Laboratory Dashboard
+Professional Certification & Security Laboratory Dashboard:
 This project is a high-performance, application designed to serve as a centralized hub for tracking professional cyber security certifications and documenting hands-on laboratory experiments. Built with React and Tailwind CSS, the application utilizes a "Zero-Trust" frontend architecture to manage and display complex career data and technical project outcomes. This portfolio represents full-stack security architecture, environment hardening techniques and hands on lab work.
 
 # Core Functionality
@@ -30,6 +30,7 @@ State Management: React Hooks (useState, useMemo) for efficient data sorting and
 # Live Application 
 🏗️ Note: This repository is part of an active cybersecurity research project. Documentation and lab write-ups are currently being synchronized from local environments. Please check back for updates.
 The site is live at https://serene-dieffenbachia-53d168.netlify.app/
+
 
 
 
