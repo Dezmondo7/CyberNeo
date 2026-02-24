@@ -25,6 +25,8 @@ import scappyI from "../assets/scappyI.png"
 import portScanner from "../assets/portScanner.png"
 import hashCracker from "../assets/hashCracker.png"
 import hashcracked from "../assets/hashCracked.png"
+import bruteforce from "../assets/bruteforce.png"
+import passwordA from "../assets/passwordA.png"
 
 
 const projects = [
@@ -279,7 +281,7 @@ const projects = [
     icon: Terminal,
      sections: [
       {
-        heading: "Port scanner script",
+        heading: "Port Scanner Script",
         text: " Created a new file for the python script using 'nano hashc.py' and inserted the code used to create the port scanner. The application imports hashlib which enables you to change to the required hash i.e MD5/SHA256. This application also reads from a selected wordlist.",
         screenshot: hashCracker,
         screenshotLabel: "Port scanner python code",
@@ -288,6 +290,28 @@ const projects = [
         heading: "Cracking Hashes",
         text: "By running the script with Python3, the chosen wordlist location and the correct hash, the application is able to crack hashes.",
         screenshot: hashcracked,
+        screenshotLabel: "Domain enumeration using Python3",
+      },
+    ],
+  },
+   {
+    title: "Python Brute Force Application ",
+    description: "Used a Python Script to build a Brute Force attack application. .",
+    tech: ["Linux", "Python", "Script", "Pentest"],
+    github: "",
+    live: "#",
+    icon: Terminal,
+     sections: [
+      {
+        heading: "Used a python script along with Python3 to simulate brute force attacks on the target machine.",
+        text: "This script has variables for user input such as the target(IP Address), username and the file path for the attack dictionary/wordlist. It utalizes the paramiko function, if the password is succesful it returns 0 along with the password else it returns a 1",
+        screenshot: bruteforce,
+        screenshotLabel: "Port scanner python code",
+      },
+      {
+        heading: "Cracking Hashes",
+        text: "Used a python script along with Python3 to simulate brute force attacks on the target machine. ",
+        screenshot: passwordA,
         screenshotLabel: "Domain enumeration using Python3",
       },
     ],
