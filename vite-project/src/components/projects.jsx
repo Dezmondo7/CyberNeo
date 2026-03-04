@@ -27,6 +27,9 @@ import hashCracker from "../assets/hashCracker.png"
 import hashcracked from "../assets/hashCracked.png"
 import bruteforce from "../assets/bruteforce.png"
 import passwordA from "../assets/passwordA.png"
+import Proxy from "../assets/proxy.png"
+import intruder from "../assets/intruder.png"
+import resultsP from "../assets/resultsP.png"
 
 
 const projects = [
@@ -312,6 +315,34 @@ const projects = [
         heading: "Cracking Hashes",
         text: "Used a python script along with Python3 to simulate brute force attacks on the target machine. ",
         screenshot: passwordA,
+        screenshotLabel: "Domain enumeration using Python3",
+      },
+    ],
+  },
+     {
+    title: "Burpe Suite Intruder",
+    description: "Utalized Burpe suite to brute force web application login portals.",
+    tech: ["Burpe Suite", "Brute-force", "Password-attack", "Wordlist"],
+    github: "",
+    live: "#",
+    icon: Terminal,
+     sections: [
+      {
+        heading: "Set up Burpe Suite to monitor website traffic and monitor network logs.  .",
+        text: "This script has variables for user input such as the target(IP Address), username and the file path for the attack dictionary/wordlist. It utalizes the paramiko function, if the password is succesful it returns 0 along with the password else it returns a 1",
+        screenshot: Proxy,
+        screenshotLabel: "Port scanner python code",
+      },
+      {
+        heading: "Sniper Attack",
+        text: "Captured network traffic and re-directed POST request to intruder. Once within INtruder, the attack must be set to sniper in order to systematically attempt each passwors in the defined wordlist. The wordlist path must also be uploaded into the payload. Within the password input area the two add icons must be selected within the quotation marks, then the sniper attack can begin.  ",
+        screenshot: intruder,
+        screenshotLabel: "Domain enumeration using Python3",
+      },
+      {
+        heading: "Log Results",
+        text: "Results are displayed in the Logger and the results also disply in a serperatte modal window. Results confirm succesful 200 respsonse with succesful password.",
+        screenshot: resultsP,
         screenshotLabel: "Domain enumeration using Python3",
       },
     ],
