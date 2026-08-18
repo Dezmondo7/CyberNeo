@@ -3,7 +3,7 @@ import { Award } from "lucide-react"
 import { CertificationModal } from "./certification-modal"
 import cyberlevel2 from "../assets/cyber2.png"
 import edxcert from "../assets/edxcertificate.png"
-import cybersec101 from "../assets/THM_CYBER_SECURITY_101.pdf"
+import cybersec101 from "../assets/THM_CYBER_SECURITY_101.png"
 
 const certifications = [
   {
@@ -55,7 +55,7 @@ const certifications = [
       {
         heading: "About the Certification",
         text: "The edX Engineering Bootcamp was an intensive, industry‑aligned technical training programme designed to rapidly build practical engineering and technology skills through project‑based learning, hands‑on assignments, and real‑world scenarios.",
-        image: cybersec101,
+        image: null,
         imageLabel: "CISSP Certificate",
       },
       {
@@ -82,14 +82,14 @@ const certifications = [
   },
   {
     name: "Cyber Security 101",
-    fullName: "Linux, Windows, Active Directory, Wireshark, Nmap, TCPDump, John the Ripper, Metasploit, Burpesuite, GoBuster, FlareVM, IDS and Firewalls.  ",
+    fullName: "TryHackMe Cyber Security 101",
     issuer: "TryHackMe",
-    year: "2025",
+    year: "2026",
       sections: [
       {
         heading: "About the Certification",
-        text: "This certification covers foundational knowledge of security, compliance, and identity (SCI) concepts, as well as related solutions across Microsoft Azure and Microsoft 365. ",
-        image: null,
+        text: "This certification covers foundational knowledge of security, gave a solid introduction to the different areas in Computer Security concepts and applications in the following: Computer Networking and Cryptography, MS Windows, Active Directory and Linux Basics, Offensive Security tools and system exploitation, Defensive Security solutions and tools. Technical tools included Linux Bash, Windows Powershell, Active Directory, Wireshark, Nmap, Tcpdump, John the Ripper, Metasploit Meterpreter, Burpe Suite, SQL, JavaScript, Hydra, GoBuster, SIEM, CyberChef, CAPA, REMnux, FlareVM, OWASP Top 10, IDS, Vulnerabiltiy Scanners and Firewalls.",
+        image: cybersec101,
         imageLabel: "",
       },
     ],
