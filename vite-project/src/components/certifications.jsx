@@ -3,6 +3,7 @@ import { Award } from "lucide-react"
 import { CertificationModal } from "./certification-modal"
 import cyberlevel2 from "../assets/cyber2.png"
 import edxcert from "../assets/edxcertificate.png"
+import cybersec101 from "../assets/THM_CYBER_SECURITY_101.pdf"
 
 const certifications = [
   {
@@ -54,7 +55,7 @@ const certifications = [
       {
         heading: "About the Certification",
         text: "The edX Engineering Bootcamp was an intensive, industry‑aligned technical training programme designed to rapidly build practical engineering and technology skills through project‑based learning, hands‑on assignments, and real‑world scenarios.",
-        image: null,
+        image: cybersec101,
         imageLabel: "CISSP Certificate",
       },
       {
@@ -70,6 +71,20 @@ const certifications = [
     fullName: "Microsoft Security, Compliance, and Identity Fundamentals",
     issuer: "Microsoft",
     year: "",
+      sections: [
+      {
+        heading: "About the Certification",
+        text: "This certification covers foundational knowledge of security, compliance, and identity (SCI) concepts, as well as related solutions across Microsoft Azure and Microsoft 365. ",
+        image: null,
+        imageLabel: "",
+      },
+    ],
+  },
+  {
+    name: "Cyber Security 101",
+    fullName: "Linux, Windows, Active Directory, Wireshark, Nmap, TCPDump, John the Ripper, Metasploit, Burpesuite, GoBuster, FlareVM, IDS and Firewalls.  ",
+    issuer: "TryHackMe",
+    year: "2025",
       sections: [
       {
         heading: "About the Certification",
