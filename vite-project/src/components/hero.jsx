@@ -24,7 +24,7 @@ export function Hero() {
       <div className="max-w-4xl mx-auto text-center">
         <div className="flex items-center justify-center gap-3 mb-6">
           <div className="h-px w-12 bg-primary" />
-          <span className="text-primary font-mono text-sm tracking-wider">CYBERSECURITY</span>
+          <span className="text-primary font-mono text-sm tracking-wider">CYBER SECURITY</span>
           <div className="h-px w-12 bg-primary" />
         </div>
         
@@ -38,7 +38,7 @@ export function Hero() {
         </p>
 
         <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-12">
-          Security Researcher & Developer with a Top 5% TryHackMe ranking and a background in web development and IT and Cybersecurity consultancy. I specialize in simulating enterprise-scale Offensive and Defensive scenarios within virtualized environments, with expertise in Active Directory and SIEM orchestration. Currently transitioning over 5 years of experience within the IT and Cybersecurity ecosystem into a dedicated technical role, combining a developer’s logic with a researcher’s mindset to secure complex infrastructures.
+          Security Researcher & Developer with a Top 5% TryHackMe ranking and a background in web development and IT and Cyber Security consultancy. I specialize in simulating enterprise-scale Offensive and Defensive scenarios within virtualized environments, with expertise in Active Directory and SIEM orchestration. Currently transitioning over 5 years of experience within the IT and Cyber Security ecosystem into a dedicated technical role, combining a developer’s logic with a researcher’s mindset to secure complex infrastructures.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mb-16">

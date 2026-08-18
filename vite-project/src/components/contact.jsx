@@ -30,7 +30,7 @@ export function Contact() {
           strategies and defensive hardening techniques. The projects above are centered on a dedicated lab environment where I simulate complex Active Directory architectures and SIEM configurations to bridge the gap between theoretical threats and enterprise-scale defense. By deconstructing the entire stack—from 
           hardware limitations to enterprise software architecture—I have gained an 'under-the-hood' 
           understanding of how vulnerabilities manifest and how to systematically defend against them. 
-          This hands-on research is validated by a <strong>Top 7% global ranking on TryHackMe</strong>, 
+          This hands-on research is validated by a <strong>Top 5% global ranking on TryHackMe, </strong>
           reflecting my commitment to continuous offensive and defensive skill development.
         </p>
 

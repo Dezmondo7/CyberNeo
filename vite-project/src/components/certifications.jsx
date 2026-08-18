@@ -14,15 +14,15 @@ const certifications = [
       sections: [
       {
         heading: "About the Certification",
-        text: "The Level 2 Cyber Security Certificate is a foundational, hands-on qualification that combines practical lab-based exercises with a formal assessment exam. It evaluates a candidate’s ability to apply core cybersecurity principles in real-world scenarios, validating both technical competence and problem-solving skills across defensive and operational security domains.",
+        text: "The Level 2 Cyber Security Certificate is a foundational, hands-on qualification that combines practical lab-based exercises with a formal assessment exam. It evaluates a candidate’s ability to apply core cyber security principles in real-world scenarios, validating both technical competence and problem-solving skills across defensive and operational security domains.",
         image: null,
-        imageLabel: "OSCP Certificate",
+        imageLabel: null,
       },
       {
         heading: "Skills Gained",
         text: "The course covered key areas including cyber legislation and regulatory requirements, the CIA triad (confidentiality, integrity, and availability), and fundamental system architecture concepts such as the LAMP stack. It also developed practical skills in hardware and software analysis, threat identification, and risk awareness, reinforcing the ability to assess and secure systems within real-world IT environments.",
         image: cyberlevel2,
-        imageLabel: null,
+        imageLabel: "Level 4 Certificate | Grade Distinction",
       },
     ],
   },
@@ -36,7 +36,7 @@ const certifications = [
         heading: "About the Certification",
         text: "The Level 4 Cyber Security Certificate focused on advanced theoretical analysis of cyber threats, including detailed examination of technical attack methods and strategies. The course emphasized preventative measures, risk mitigation, and incident response, incorporating insights from Security Operations Center (SOC) environments.",
         image: null,
-        imageLabel: "CEH Certificate",
+        imageLabel: "Level 4 Certificate | Grade Distinction",
       },
       {
         heading: "Skills Gained",
@@ -56,7 +56,7 @@ const certifications = [
         heading: "About the Certification",
         text: "The edX Engineering Bootcamp was an intensive, industry‑aligned technical training programme designed to rapidly build practical engineering and technology skills through project‑based learning, hands‑on assignments, and real‑world scenarios.",
         image: null,
-        imageLabel: "CISSP Certificate",
+        imageLabel: "Front End Web Development Certificate | Grade 98%",
       },
       {
         heading: "Skills Gained",
