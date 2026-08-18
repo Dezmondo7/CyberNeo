@@ -7,7 +7,7 @@ import cybersec101 from "../assets/THM_CYBER_SECURITY_101.png"
 
 const certifications = [
   {
-    name: "Level 2",
+    name: "Level 2 | Grade Distinction",
     fullName: "Cyber Security & Digital Forensics",
     issuer: "Codenation | Trafford & Stockport College",
     year: "2025",
@@ -27,7 +27,7 @@ const certifications = [
     ],
   },
   {
-    name: "Level 4",
+    name: "Level 4 | Grade Distinction",
     fullName: "Cyber Security & Digital Forensics",
     issuer: "Tameside College",
     year: "2026",
@@ -47,7 +47,7 @@ const certifications = [
     ],
   },
   {
-    name: "Web Development",
+    name: "Web Development | Grade 98%",
     fullName: "Ed-X Front End Web Development",
     issuer: "Ed-X",
     year: "2024",
@@ -88,9 +88,35 @@ const certifications = [
       sections: [
       {
         heading: "About the Certification",
-        text: "This certification covers foundational knowledge of security, gave a solid introduction to the different areas in Computer Security concepts and applications in the following: Computer Networking and Cryptography, MS Windows, Active Directory and Linux Basics, Offensive Security tools and system exploitation, Defensive Security solutions and tools. Technical tools included Linux Bash, Windows Powershell, Active Directory, Wireshark, Nmap, Tcpdump, John the Ripper, Metasploit Meterpreter, Burpe Suite, SQL, JavaScript, Hydra, GoBuster, SIEM, CyberChef, CAPA, REMnux, FlareVM, OWASP Top 10, IDS, Vulnerabiltiy Scanners and Firewalls.",
-        image: cybersec101,
+        text: "This certification covers foundational knowledge of security, gave a solid introduction to the different areas in Computer Security concepts and applications in the following: Computer Networking and Cryptography, MS Windows, Active Directory and Linux Basics, Offensive Security tools and system exploitation, Defensive Security solutions and tools.",
+        image: null,
         imageLabel: "",
+      },
+       {
+        heading: "Skills Gained",
+        text: "Technical tools included Linux Bash, Windows Powershell, Active Directory, Wireshark, Nmap, Tcpdump, John the Ripper, Metasploit Meterpreter, Burpe Suite, SQL, JavaScript, Hydra, GoBuster, SIEM, CyberChef, CAPA, REMnux, FlareVM, OWASP Top 10, IDS, Vulnerabiltiy Scanners and Firewalls.",
+        image: cybersec101,
+        imageLabel: null,
+      },
+    ],
+  },
+   {
+    name: "Defending AWS",
+    fullName: "TryHackMe Defending AWS ",
+    issuer: "TryHackMe",
+    year: "TBA",
+      sections: [
+      {
+        heading: "About the Certification",
+        text: "This certification covers foundational knowledge of most common services and how to identify real-world misconfiguration, fix them, and learn how to securely implement the services from day one.",
+        image: null,
+        imageLabel: "",
+      },
+       {
+        heading: "Skills Gained",
+        text: "",
+        image: null,
+        imageLabel: null,
       },
     ],
   },

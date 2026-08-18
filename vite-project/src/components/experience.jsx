@@ -1,28 +1,28 @@
 import { ExternalLink } from "lucide-react"
 
 const experiences = [
+   {
+    period: "Sept 2026 — ",
+    title: "MSc Cloud and Network Security Student",
+    company: "University of Greater Manchester",
+    description: "Awarded an Unconditional offer to study the MSc in Cloud and Network Security. Course content focuses on Cloud Solutions and Implementation, Penetration Testing and Forensics, DevOps and Enterprise Network Architecture. The course integrates hands-on labs using tools and vendors from key industry partners.",
+    skills: ["AWS", "Red Hat", "Cisco", "GitHub"],
+    link: "#",
+  },
   {
-    period: "2025 — Present",
+    period: "Oct 2025 — May 2026",
     title: "Cyber Security Student",
     company: "Tameside College | Trafford & Stockport College",
-    description: "Currently completing Level 4 Cyber Security certification with a focus on advanced theoretical analysis of attack vectors and multi-layered defense mechanisms.",
-    skills: ["Penetration Testing", "Python", "Burp Suite", "AWS Security"],
+    description: "Completed with Distinction the Level 4 Cyber Security certification with a focus on advanced theoretical analysis of attack vectors and multi-layered defense mechanisms.",
+    skills: ["Penetration Testing", "Python", "Burp Suite", "Network Design"],
     link: "#",
   },
   {
-    period: "2020 — 2025",
+    period: "2017 — 2025",
     title: "IT & Cyber Security Consultant",
-    company: "Virtuoso Solutions",
-    description: "Strategic provider of specialist IT and cybersecurity consultancy, dedicated to the successful execution of enterprise-level digital transformations. Proven track record in managing high-stakes projects, ranging cloud transitions to robust security policy implementation.",
+    company: "IT Consultancies",
+    description: "Strategic provider of specialist IT and Cybersecurity consultancy sourcing project specialists who contributed to the successful execution of enterprise-level digital transformations. Proven track record contributing to high-stakes projects, ranging from cloud transitions to robust security policy implementation.",
     skills: ["SIEM", "Threat Intelligence", "Splunk", "Incident Response"],
-    link: "#",
-  },
-  {
-    period: "2017 — 2020",
-    title: "IT & Cyber Security Consultant",
-    company: "Robert Walters",
-    description: "Delivered high-impact IT and cybersecurity consultancy for enterprise-scale programs. Specialized in deploying expert consultants to lead mission-critical initiatives, including contactless ticketing systems, cloud migrations, security framework development, and comprehensive network refreshes.",
-    skills: ["Cyber Consulting", "Governance", "Risk", "Cisco", "Azure Cloud"],
     link: "#",
   },
 ]
