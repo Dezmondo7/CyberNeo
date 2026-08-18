@@ -21,7 +21,7 @@ Interactive Metadata Filtering: Implemented high-speed filtering logic to sort c
 # Tech Stack
 Frontend: React (Vite-optimized for low-latency performance).
 
-Styling: Tailwind CSS (Custom "Cyber" Theme with dark-mode optimization).
+Styling: Tailwind CSS (Custom "Cyber" Theme).
 
 Icons & Assets: React Icons for standardized professional branding.
 
